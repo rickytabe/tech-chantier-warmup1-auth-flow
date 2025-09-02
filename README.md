@@ -46,7 +46,7 @@ assets/
 
 1. **Clone the repo:**
    ```
-   git clone https://github.com/<your-username>/tech-chantier-warmup1-auth-flow.git
+   git clone https://github.com/rickytabe2/tech-chantier-warmup1-auth-flow.git
    cd tech-chantier-warmup1-auth-flow
    ```
 
