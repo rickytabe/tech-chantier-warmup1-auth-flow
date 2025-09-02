@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# tech-chantier-warmup1-auth-flow
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native Expo authentication flow warmup task, inspired by [this Dribbble design](https://dribbble.com/shots/19188312-Onboarding-Sign-in-And-Sign-Up-Mobile-App-Design).
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Onboarding Screen**: Welcome users with a clean, modern intro.
+- **Sign In & Register Screens**: Manual form validation, no external libraries.
+- **Reusable Components**: CustomButton, CustomInput, InfoModal.
+- **Consistent Native Styling**: All styles via React Native's `StyleSheet`.
+- **Modal on Submit**: Shows entered info with "Close" and "Close and clear" actions.
+- **Separation of Concerns**: Clear file structure and naming conventions.
+- **Safe Area & Keyboard Handling**: Ensures content is visible and accessible.
 
-   ```bash
+## File Structure
+
+```
+app/
+  _layout.tsx           # Root layout (navigation, keyboard handling)
+  index.tsx             # Onboarding screen
+  auth/
+    sign-in.tsx         # Sign In screen
+    register.tsx        # Register screen
+  components/
+    CustomButton.tsx    # Reusable button
+    CustomInput.tsx     # Reusable input
+    InfoModal.tsx       # Reusable info modal
+  constants/
+    colors.ts           # Color palette
+assets/
+  my-assets/            # Images/icons for onboarding and social auth
+```
+
+## Manual Validation
+
+- All forms are validated in code (no external validator).
+- Errors are shown inline below each input.
+
+## Modal Behavior
+
+- On successful form submission, a modal displays all entered information.
+- **BTN1: Close** — closes the modal.
+- **BTN2: Close and clear** — closes the modal and resets the form.
+
+## How to Run
+
+1. **Clone the repo:**
+   ```
+   git clone https://github.com/<your-username>/tech-chantier-warmup1-auth-flow.git
+   cd tech-chantier-warmup1-auth-flow
+   ```
+
+2. **Install dependencies:**
+   ```
    npm install
    ```
 
-2. Start the app
-
-   ```bash
+3. **Start the Expo project:**
+   ```
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on your device or emulator.**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Submission
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **GitHub Repo:** Publicly available at [`tech-chantier-warmup1-auth-flow`](https://github.com/rickytabe2/tech-chantier-warmup1-auth-flow)
+- **Video Walkthrough:** [YouTube Unlisted Link](https://youtube.com/your-video-link)
+  - Explains features and demonstrates usage
